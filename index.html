@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Brand guidelines for The Quinn Group — Anne Warner & Sean Quinn, Treasure Coast real estate.">
+<style>
+@media print{
+  *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;}
+  .reveal-on .rv,.rv{opacity:1!important;transform:none!important;}
+  .hero{min-height:95vh!important;} .hero .bg{animation:none!important;transform:scale(1)!important;}
+  .scroll-cue{display:none!important;} .spread{min-height:72vh!important;}
+  .card,.member,.type-card,.duo,.sw,.ld,.device{break-inside:avoid;}
+  section{break-inside:auto;}
+}
+@page{size:A4;margin:0;}
+html,body{margin:0;}
+</style>
+<title>Quinn Group Brand</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fahkwang:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Open+Sans:wght@400;500;600;700&display=swap">
+<style>
+  :root{
+    --blue:#3076BB; --blue-deep:#245A8F; --blue-lt:#8FBEE6;
+    --ink:#121418; --ink2:#1b1e24; --charcoal:#2b2f36; --grey:#7a7a7a; --grey-soft:#b6b6b6;
+    --line:#e6e5e2; --paper:#ffffff; --mist:#F5F4F2; --sand:#C6A98E; --sand-deep:#a9876a; --red:#DE0026;
+    color-scheme:light;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:'Open Sans',system-ui,sans-serif;font-size:16px;line-height:1.75;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+  img{max-width:100%;display:block;}
+  .wrap{width:100%;max-width:1060px;margin:0 auto;padding:0 32px;}
+  h1,h2,h3,.disp{font-family:'Fahkwang',Georgia,serif;font-weight:300;letter-spacing:.004em;margin:0;}
+  em,.it{font-style:italic;font-family:'Fahkwang',serif;color:var(--blue-deep);font-weight:300;}
+  p{margin:0 0 16px;}
+  .eyebrow{font-family:'Open Sans',sans-serif;font-size:.7rem;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--blue);}
+  .lead{font-size:1.16rem;color:#3a3a3a;max-width:64ch;}
+  a{color:inherit;}
+
+  /* ---------- HERO ---------- */
+  .hero{position:relative;min-height:94vh;display:flex;align-items:flex-end;overflow:hidden;color:#fff;}
+  .hero .bg{position:absolute;inset:0;background:url(qg-cover.jpg) center 42%/cover no-repeat;transform:scale(1.12);animation:kenburns 18s ease-out forwards;}
+  @keyframes kenburns{to{transform:scale(1);}}
+  .hero .scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,14,20,.55) 0%,rgba(10,14,20,.15) 32%,rgba(10,14,20,.35) 62%,rgba(10,14,20,.86) 100%);}
+  .hero .inner{position:relative;width:100%;padding-bottom:62px;}
+  .hero .topbar{position:absolute;top:34px;left:0;right:0;display:flex;justify-content:space-between;align-items:center;}
+  .hero .topbar img{height:46px;width:auto;filter:drop-shadow(0 2px 8px rgba(0,0,0,.4));}
+  .hero .topbar .tag{font-size:.68rem;letter-spacing:.3em;text-transform:uppercase;color:rgba(255,255,255,.75);}
+  .hero .kicker{font-size:.72rem;letter-spacing:.34em;text-transform:uppercase;color:var(--sand);font-weight:700;}
+  .hero h1{font-size:clamp(3.4rem,10vw,8rem);line-height:.92;margin:18px 0 0;font-weight:300;letter-spacing:-.01em;text-shadow:0 2px 30px rgba(0,0,0,.3);}
+  .hero h1 em{color:#fff;font-style:italic;}
+  .hero .sub{margin-top:22px;font-family:'Fahkwang',serif;font-style:italic;font-size:clamp(1.15rem,2.4vw,1.7rem);color:rgba(255,255,255,.92);max-width:30ch;}
+  .hero .meta{display:flex;gap:40px;flex-wrap:wrap;margin-top:36px;border-top:1px solid rgba(255,255,255,.22);padding-top:22px;}
+  .hero .meta div b{display:block;font-size:.64rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.6);}
+  .hero .meta div span{font-size:.96rem;color:#fff;}
+  .hero .who{margin-top:26px;font-size:.94rem;letter-spacing:.03em;color:rgba(255,255,255,.84);}
+  .scroll-cue{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);font-size:.62rem;letter-spacing:.3em;text-transform:uppercase;color:rgba(255,255,255,.7);animation:bob 2.4s ease-in-out infinite;}
+  @keyframes bob{0%,100%{transform:translate(-50%,0);}50%{transform:translate(-50%,7px);}}
+
+  /* ---------- SECTIONS ---------- */
+  section{padding:92px 0;position:relative;}
+  .band-mist{background:var(--mist);}
+  .band-ink{background:var(--ink);color:#e7e7ea;}
+  .band-ink h2,.band-ink h3,.band-ink .disp{color:#fff;}
+  .band-ink .eyebrow{color:var(--blue-lt);} .band-ink em{color:var(--sand);} .band-ink .lead{color:#c9c9cd;}
+
+  .head{position:relative;margin-bottom:34px;}
+  .bignum{position:absolute;right:0;top:-54px;font-family:'Fahkwang',serif;font-weight:300;font-size:clamp(7rem,18vw,15rem);line-height:1;color:var(--blue);opacity:.07;pointer-events:none;z-index:0;}
+  .band-ink .bignum{color:#fff;opacity:.06;}
+  .head .eyebrow{position:relative;z-index:1;}
+  .head h2{position:relative;z-index:1;font-size:clamp(2.1rem,4.6vw,3.4rem);line-height:1.04;margin-top:14px;max-width:18ch;}
+  .lead{position:relative;z-index:1;}
+
+  .cols2{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
+  .cols3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px;}
+  @media(max-width:720px){.cols2,.cols3{grid-template-columns:1fr;}}
+  .mt{margin-top:30px;}
+
+  .card{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:28px 30px;box-shadow:0 30px 60px -48px rgba(18,20,24,.4);}
+  .card h3{font-size:1.5rem;margin-bottom:6px;}
+  .card h4{font-family:'Open Sans';font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;margin:0 0 12px;color:var(--blue);}
+  .card ul{margin:0;padding-left:18px;color:#444;} .card li{margin-bottom:8px;}
+  .pos h4{color:var(--blue-deep);} .neg h4{color:var(--red);}
+
+  /* duality split */
+  .duo{display:grid;grid-template-columns:1fr 1fr;gap:0;border-radius:18px;overflow:hidden;margin-top:30px;box-shadow:0 40px 80px -50px rgba(18,20,24,.6);}
+  .duo > div{padding:40px 38px 44px;}
+  .duo .pro{background:#fff;} .duo .per{background:var(--ink);color:#e7e7ea;}
+  .duo .per h3{color:#fff;} .duo .per li{color:#c9c9cc;}
+  .duo h3{font-size:2rem;margin:6px 0 0;}
+  .duo .k{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);font-weight:700;}
+  .duo .per .k{color:var(--sand);}
+  .duo ul{margin:18px 0 0;padding-left:18px;font-size:.98rem;color:#555;} .duo li{margin-bottom:8px;}
+  @media(max-width:620px){.duo{grid-template-columns:1fr;}}
+
+  /* full-bleed quote spread */
+  .spread{position:relative;min-height:62vh;display:flex;align-items:center;color:#fff;overflow:hidden;}
+  .spread .bg{position:absolute;inset:0;background:url(qg-divider.jpg) center/cover;}
+  .spread .scrim{position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,14,20,.8),rgba(10,14,20,.4) 70%,rgba(10,14,20,.2));}
+  .spread .inner{position:relative;max-width:1060px;margin:0 auto;padding:80px 32px;width:100%;}
+  .spread .q{font-family:'Fahkwang',serif;font-weight:300;font-size:clamp(1.9rem,4.4vw,3.4rem);line-height:1.18;max-width:20ch;text-shadow:0 2px 30px rgba(0,0,0,.4);}
+  .spread .q em{color:var(--sand);font-style:italic;}
+  .spread .by{margin-top:22px;font-size:.72rem;letter-spacing:.26em;text-transform:uppercase;color:rgba(255,255,255,.8);}
+
+  /* colour */
+  .swatches{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+  .sw{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--paper);box-shadow:0 24px 50px -44px rgba(18,20,24,.5);}
+  .sw .chip{height:92px;}
+  .sw .meta{padding:13px 15px;}
+  .sw .nm{font-weight:700;font-size:.92rem;} .sw .hex{font-size:.8rem;color:var(--grey);text-transform:uppercase;letter-spacing:.04em;margin-top:2px;}
+  .sw .tok{font-size:.76rem;color:var(--blue-deep);font-weight:600;margin-top:4px;} .sw .use{font-size:.78rem;color:var(--grey);margin-top:6px;line-height:1.45;}
+  @media(max-width:820px){.swatches{grid-template-columns:1fr 1fr;}}
+
+  /* type */
+  .type-card{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:32px 34px;margin-top:16px;box-shadow:0 30px 60px -50px rgba(18,20,24,.4);}
+  .type-card .role{font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--blue);font-weight:700;}
+  .type-card .name{font-family:'Fahkwang',serif;font-weight:300;font-size:2.8rem;margin:4px 0 2px;}
+  .type-card.body .name{font-family:'Open Sans',sans-serif;font-weight:700;font-size:2.2rem;}
+  .type-card .glyphs{color:var(--grey);font-size:1.02rem;margin-top:8px;}
+  .type-card .spec{margin-top:18px;border-top:1px solid var(--line);padding-top:18px;}
+  .scale{margin-top:22px;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;}
+  .scale div{display:grid;grid-template-columns:150px 1fr;gap:16px;padding:15px 22px;border-bottom:1px solid var(--line);align-items:baseline;}
+  .scale div:last-child{border-bottom:0;}
+  .scale .lbl{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--grey);}
+
+  /* layout */
+  .bandviz{margin-top:8px;border-radius:14px;overflow:hidden;box-shadow:0 24px 50px -44px rgba(18,20,24,.5);}
+  .bandviz div{padding:18px 22px;font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;}
+  .bandviz .m{background:var(--mist);color:var(--grey);} .bandviz .i{background:var(--ink);color:var(--sand);} .bandviz .b{background:var(--blue);color:#fff;}
+  .device{display:grid;grid-template-columns:210px 1fr;gap:26px;padding:22px 0;border-top:1px solid var(--line);}
+  .device .d-name{font-family:'Fahkwang',serif;font-size:1.3rem;} .device .d-tag{font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--blue);margin-top:2px;}
+  .device p{margin:0;font-size:.96rem;color:#555;}
+  @media(max-width:620px){.device{grid-template-columns:1fr;gap:6px;}}
+
+  /* logo */
+  .logo-demos{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+  .ld{border:1px solid var(--line);border-radius:16px;padding:46px;display:flex;align-items:center;justify-content:center;min-height:170px;}
+  .ld.light{background:var(--paper);} .ld.dark{background:var(--blue);}
+  .ld img{max-height:76px;width:auto;}
+  .cap{margin-top:10px;font-size:.8rem;color:var(--grey);text-align:center;}
+  .donts{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:26px;}
+  .dont-x{border:1px solid var(--line);border-radius:12px;padding:18px 14px;font-size:.84rem;color:#555;background:#fff;}
+  .dont-x b{color:var(--red);font-size:1.1rem;}
+  @media(max-width:720px){.donts{grid-template-columns:1fr 1fr;}}
+
+  /* team */
+  .team{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
+  .member{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:32px 34px;box-shadow:0 30px 60px -50px rgba(18,20,24,.4);}
+  .member .role{font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--blue);font-weight:700;}
+  .member .nm{font-family:'Fahkwang',serif;font-weight:300;font-size:2.1rem;margin:4px 0 2px;}
+  .member .yr{font-size:.86rem;color:var(--sand-deep);font-style:italic;font-family:'Fahkwang',serif;margin-bottom:14px;}
+  .member p{font-size:.97rem;color:#444;}
+  .member .contact{margin-top:16px;padding-top:14px;border-top:1px solid var(--line);font-size:.86rem;color:var(--blue-deep);}
+  @media(max-width:620px){.team{grid-template-columns:1fr;}}
+
+  /* components */
+  .btnrow{display:flex;gap:14px;flex-wrap:wrap;margin:8px 0 6px;align-items:center;}
+  .b{display:inline-flex;align-items:center;font-family:'Open Sans';font-weight:600;font-size:.92rem;text-decoration:none;padding:14px 28px;border-radius:7px;transition:transform .16s ease;}
+  .b:hover{transform:translateY(-2px);}
+  .b-primary{background:var(--blue);color:#fff;} .b-ghost{background:transparent;color:var(--blue-deep);border:1px solid var(--blue);} .b-dark{background:var(--ink);color:#fff;}
+  .comp-note{font-size:.84rem;color:var(--grey);margin-top:6px;}
+  .field{margin-top:18px;max-width:420px;}
+  .field label{display:block;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--grey);margin-bottom:6px;}
+  .field input{width:100%;padding:13px 15px;border:1px solid var(--line);border-radius:7px;font:inherit;font-size:.95rem;}
+
+  /* naming */
+  .kv{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;}
+  .kv div{display:grid;grid-template-columns:210px 1fr;gap:16px;padding:15px 22px;border-bottom:1px solid var(--line);font-size:.95rem;}
+  .kv div:last-child{border-bottom:0;}
+  .kv b{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--grey);font-weight:700;}
+  @media(max-width:620px){.kv div{grid-template-columns:1fr;gap:2px;}}
+
+  /* closing */
+  .closing{position:relative;background:var(--ink);color:#fff;text-align:center;padding:110px 0;overflow:hidden;}
+  .closing .glow{position:absolute;top:-30%;left:50%;transform:translateX(-50%);width:120%;height:140%;background:radial-gradient(ellipse at center,rgba(48,118,187,.35),transparent 60%);}
+  .closing .inner{position:relative;}
+  .closing h2{font-size:clamp(2.2rem,5vw,3.6rem);color:#fff;}
+  .closing h2 em{color:var(--sand);}
+  .closing p{color:#c7c7cc;max-width:46ch;margin:18px auto 0;}
+
+  footer{background:#0c0e12;color:#8b8d93;padding:38px 0;font-size:.84rem;}
+  .foot-flex{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center;}
+  footer .tl{font-family:'Fahkwang',serif;font-style:italic;color:#fff;font-size:1.05rem;}
+
+  /* reveal (safe: hidden only once JS marks body) */
+  .reveal-on .rv{opacity:0;transform:translateY(26px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1);}
+  .reveal-on .rv.in{opacity:1;transform:none;}
+  @media(prefers-reduced-motion:reduce){.reveal-on .rv{opacity:1!important;transform:none!important;} .hero .bg{animation:none;transform:scale(1);} .scroll-cue{animation:none;}}
+</style>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="bg"></div><div class="scrim"></div>
+  <div class="inner wrap">
+    <span class="kicker">Brand Guidelines</span>
+    <h1>The Quinn Group</h1>
+    <p class="sub">"Bringing professionalism back to real estate, one transaction at a time."</p>
+    <p class="who">Anne Warner &amp; Sean Quinn &middot; Treasure Coast, Florida</p>
+  </div>
+</header>
+
+<!-- 01 THE IDEA -->
+<section id="s1">
+  <div class="wrap">
+    <div class="head rv"><span class="bignum">01</span><span class="eyebrow">The Idea</span><h2>Professional and personal, <em>at once</em>.</h2></div>
+    <p class="lead rv">The tagline says one half, "bringing professionalism back to real estate." The logo says the other, "like family." The whole identity lives in holding them together. All professional reads cold and corporate; all personal reads soft and amateur. The tension between them is the brand.</p>
+    <div class="duo rv">
+      <div class="pro"><span class="k">Professional</span><h3>The expertise half</h3><ul><li>Premier, upscale, waterfront market</li><li>Technology, privacy, speed and efficiency</li><li>Clean structure, confident type, blue accent</li><li>Language about skill and the process</li></ul></div>
+      <div class="per"><span class="k">Personal</span><h3>The family half</h3><ul><li>"Treated as though I were family"</li><li>Two named people, local roots, real faces</li><li>Warm neutrals, natural light, human moments</li><li>Language about care and relationships</li></ul></div>
+    </div>
+    <p class="mt rv">Every page should feel competent enough to trust with a $2M sale, and warm enough to call back.</p>
+  </div>
+</section>
+
+<!-- 02 POSITIONING -->
+<section id="s2" class="band-mist">
+  <div class="wrap">
+    <div class="head rv"><span class="bignum">02</span><span class="eyebrow">Positioning</span><h2>Anne and Sean, <em>front and centre</em>.</h2></div>
+    <p class="lead rv">Most real estate sites lead with a stock photo of a house. This one leads with two named people and a family promise, the one thing competitors cannot copy. Sean grew up in Martin County and knows the area the way a transplant never will; Anne is the steady, caring hand clients describe as treating them "like family." That pairing is the story every page should carry.</p>
+    <div class="cols2 mt rv">
+      <div class="card pos"><h4>Lead with</h4><ul><li>Anne and Sean by name, with real faces</li><li>The "like family" promise, stated plainly</li><li>Sean's local, grew-up-here roots</li><li>Responsiveness and genuine care</li><li>Real recent sales on the Treasure Coast</li></ul></div>
+      <div class="card neg"><h4>Avoid</h4><ul><li>Stock real estate photography of any kind</li><li>Empty luxury filler like "dream home awaits"</li><li>Leading with price or "just listed" urgency</li><li>Anonymous "our team of experts"</li><li>Over-punctuation and hard-sell exclamation</li></ul></div>
+    </div>
+    <p class="mt rv"><strong>Proof worth protecting:</strong> recent closings from $1.19M to $2.55M across Hobe Sound, Sewalls Point and Jensen Beach, full-time local experience, and a service style built on privacy, speed and personal attention.</p>
+  </div>
+</section>
+
+<!-- SPREAD -->
+<section class="spread">
+  <div class="bg"></div><div class="scrim"></div>
+  <div class="inner">
+    <div class="q rv">"Treated me as though I were <em>family</em>."</div>
+    <div class="by rv">A Quinn Group client &middot; the promise, in their words</div>
+  </div>
+</section>
+
+<!-- 03 COLOUR -->
+<section id="s3">
+  <div class="wrap">
+    <div class="head rv"><span class="bignum">03</span><span class="eyebrow">Colour</span><h2>One coastal blue, <em>a clean ground</em>.</h2></div>
+    <p class="lead rv">A confident coastal blue is the single accent, on a crisp ink-and-paper neutral system. Blue carries links, buttons and emphasis; everything else stays quiet so the blue and the photography lead. Warm sand is a soft touch of the "family" half; red is for alerts only.</p>
+    <div class="swatches mt rv">
+      <div class="sw"><div class="chip" style="background:#3076BB;"></div><div class="meta"><div class="nm">Coastal Blue</div><div class="hex">#3076BB</div><div class="tok">--blue</div><div class="use">The one accent: buttons, links, large type.</div></div></div>
+      <div class="sw"><div class="chip" style="background:#245A8F;"></div><div class="meta"><div class="nm">Deep Blue</div><div class="hex">#245A8F</div><div class="tok">--blue-deep</div><div class="use">Links, small type, hover states.</div></div></div>
+      <div class="sw"><div class="chip" style="background:#8FBEE6;"></div><div class="meta"><div class="nm">Light Blue</div><div class="hex">#8FBEE6</div><div class="tok">--blue-lt</div><div class="use">Accent on dark grounds only.</div></div></div>
+      <div class="sw"><div class="chip" style="background:#121418;"></div><div class="meta"><div class="nm">Ink</div><div class="hex">#121418</div><div class="tok">--ink</div><div class="use">Headlines, body, dark full-bleed bands.</div></div></div>
+      <div class="sw"><div class="chip" style="background:#7a7a7a;"></div><div class="meta"><div class="nm">Stone Grey</div><div class="hex">#7A7A7A</div><div class="tok">--grey</div><div class="use">Secondary text, labels, captions.</div></div></div>
+      <div class="sw"><div class="chip" style="background:#C6A98E;"></div><div class="meta"><div class="nm">Warm Sand</div><div class="hex">#C6A98E</div><div class="tok">--sand</div><div class="use">The warm accent. Dark grounds &amp; detail.</div></div></div>
+      <div class="sw"><div class="chip" style="background:#F5F4F2;border-bottom:1px solid #e6e5e2;"></div><div class="meta"><div class="nm">Mist</div><div class="hex">#F5F4F2</div><div class="tok">--mist</div><div class="use">Alternating section bands.</div></div></div>
+      <div class="sw"><div class="chip" style="background:#ffffff;border-bottom:1px solid #e6e5e2;"></div><div class="meta"><div class="nm">Paper</div><div class="hex">#FFFFFF</div><div class="tok">--paper</div><div class="use">Base surface, cards.</div></div></div>
+      <div class="sw"><div class="chip" style="background:#DE0026;"></div><div class="meta"><div class="nm">Signal Red</div><div class="hex">#DE0026</div><div class="tok">--red</div><div class="use">Alerts and errors only.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 TYPOGRAPHY -->
+<section id="s4" class="band-mist">
+  <div class="wrap">
+    <div class="head rv"><span class="bignum">04</span><span class="eyebrow">Typography</span><h2>An elegant serif, <em>a quiet sans</em>.</h2></div>
+    <p class="lead rv">Fahkwang gives headlines a refined, modern-serif character for an upscale clientele; Open Sans keeps everything functional clean and legible. Headlines in one, everything else in the other, never the reverse.</p>
+    <div class="type-card rv"><div class="role">Display &middot; Headlines, names, pull quotes</div><div class="name">Fahkwang</div><div class="glyphs">ABCDEFGHIJKLMNOPQRSTUVWXYZ &nbsp; abcdefghij &nbsp; 1234567890</div><div class="spec"><span class="disp" style="font-size:2.4rem;line-height:1.1;">Finding your place on the <em>Treasure Coast</em></span></div></div>
+    <div class="type-card body rv"><div class="role">Interface &middot; Body, navigation, labels</div><div class="name">Open Sans</div><div class="glyphs">ABCDEFGHIJKLMNOPQRSTUVWXYZ &nbsp; abcdefghij &nbsp; 1234567890</div><div class="spec"><span style="font-size:1.02rem;color:#444;">From the first conversation to the closing table, we guide you with clarity and care, pairing deep local knowledge with technology that makes buying or selling faster, more private and far less stressful.</span></div></div>
+    <div class="scale rv">
+      <div><span class="lbl">Display</span><span class="disp" style="font-size:2.4rem;">Fahkwang 300 &middot; 56 / 1.0</span></div>
+      <div><span class="lbl">Section</span><span class="disp" style="font-size:1.8rem;">Fahkwang 300 &middot; 40 / 1.1</span></div>
+      <div><span class="lbl">Name</span><span class="disp" style="font-weight:400;font-size:1.4rem;">Fahkwang 400 &middot; 26 / 1.1</span></div>
+      <div><span class="lbl">Lede</span><span style="font-size:1.1rem;color:#555;">Open Sans 400 &middot; 18 / 1.8</span></div>
+      <div><span class="lbl">Body</span><span style="font-size:1rem;color:#555;">Open Sans 400 &middot; 16 / 1.75</span></div>
+      <div><span class="lbl">Label</span><span style="font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--grey);">Open Sans 700 &middot; 11 / uppercase</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 05 LAYOUT -->
+<section id="s5">
+  <div class="wrap">
+    <div class="head rv"><span class="bignum">05</span><span class="eyebrow">Layout</span><h2>The page alternates, <em>light then dark</em>.</h2></div>
+    <p class="lead rv">The structural rule is the band rhythm: paper and mist sections, with the occasional ink or blue band for weight. Alternation keeps a long page moving and gives the heavy moments, pricing, the family promise, the closing call to action, somewhere to land. Never stack two dark bands back to back.</p>
+    <div class="bandviz mt rv"><div class="m">Paper &middot; intro</div><div class="m">Mist &middot; content</div><div class="i">Ink &middot; the promise</div><div class="m">Mist &middot; content</div><div class="b">Blue &middot; closing CTA</div></div>
+    <div class="mt rv">
+      <div class="device"><div><div class="d-name">Oversized numeral</div><div class="d-tag">Section marker</div></div><p>A large, low-opacity Fahkwang number sits behind each section header, giving the long page rhythm and a luxury-editorial feel.</p></div>
+      <div class="device"><div><div class="d-name">Italic emphasis</div><div class="d-tag">Headline pattern</div></div><p>Every headline italicises one phrase in Fahkwang. One phrase, never two. It is what makes the headings feel written.</p></div>
+      <div class="device"><div><div class="d-name">Full-bleed spread</div><div class="d-tag">Image moment</div></div><p>A property photo running edge to edge with a single pull quote. Used once or twice to let the page breathe.</p></div>
+      <div class="device"><div><div class="d-name">The price ledger</div><div class="d-tag">Listing pattern</div></div><p>Name left, figure right, a hairline between rows. No boxes, no badges. Honest and plain.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 PHOTOGRAPHY -->
+<section id="s6" class="band-mist">
+  <div class="wrap">
+    <div class="head rv"><span class="bignum">06</span><span class="eyebrow">Photography</span><h2>Bright, coastal, <em>and real</em>.</h2></div>
+    <p class="lead rv">Photography should feel like the Treasure Coast on its best day: airy, light-filled and aspirational, but believable. Favour whites, soft blues and natural greens. When people are in frame, keep it warm and candid. Mismatched, over-filtered stock is the fastest way to undo the brand.</p>
+    <div class="cols2 mt rv">
+      <div class="card pos"><h4>Do</h4><ul><li>Real listings and local waterfront, in natural light</li><li>Light-filled interiors, pools, docks, blue water</li><li>Anne and Sean shot the same way, eye level</li><li>Leave clean space for type to sit</li><li>Keep skin tones warm and true</li></ul></div>
+      <div class="card neg"><h4>Don't</h4><ul><li>Generic stock houses, even as placeholder</li><li>Heavy filters or cold blue grading</li><li>Busy backgrounds fighting the subject</li><li>Mismatched portrait styles on the team page</li><li>Tight crops with no breathing room</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- 07 VOICE -->
+<section id="s7">
+  <div class="wrap">
+    <div class="head rv"><span class="bignum">07</span><span class="eyebrow">Voice</span><h2>Expert, warm, <em>never pushy</em>.</h2></div>
+    <p class="lead rv">Write the way Anne or Sean would talk to someone across the kitchen table: confident about the market, genuinely interested in the person. Professional in substance, personal in tone. First person plural, no hard sell, no exclamation-point urgency.</p>
+    <div class="cols2 mt rv">
+      <div class="card pos"><h4>Sounds like The Quinn Group</h4><ul><li>"We'll treat you like family, from the first call to the closing table."</li><li>"Sean grew up here. He knows these streets."</li><li>"We'll tell you honestly what a home is worth."</li><li>"Your move, handled with privacy and care."</li></ul></div>
+      <div class="card neg"><h4>Doesn't</h4><ul><li>"Your DREAM HOME is waiting, act now!!!"</li><li>"Lowest commissions in town."</li><li>Dense jargon and high-pressure lines</li><li>"Dear valued customer" and other filler</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- 08 TEAM -->
+<section id="s8" class="band-mist">
+  <div class="wrap">
+    <div class="head rv"><span class="bignum">08</span><span class="eyebrow">The Team</span><h2>The people <em>are the brand</em>.</h2></div>
+    <p class="lead rv">Anne and Sean lead every page. Each bio should close on something personal, which is what makes a team page worth reading.</p>
+    <div class="team mt rv">
+      <div class="member"><div class="role">Realtor &middot; Partner</div><div class="nm">Anne Warner</div><p>Clients describe Anne as hard-working, intelligent and genuinely caring, the kind of agent who walks a first-time buyer through every step and still hands them a list of local contacts for moving-in day. More than one has said she treated them "as though I were family."</p><div class="contact">anne@likefamilyfl.com &middot; (772) 713-7223</div></div>
+      <div class="member"><div class="role">Realtor &middot; Partner</div><div class="nm">Sean Quinn</div><p>Sean grew up in Martin County and knows the Treasure Coast the way only a local can. Clients praise how quickly he responds, how thorough he is, and the sense that he "truly had my best interest at heart." He leads on local market knowledge and the technology side.</p><div class="contact">sean@likefamilyfl.com &middot; (772) 486-6883</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 09 LOGO -->
+<section id="s9">
+  <div class="wrap">
+    <div class="head rv"><span class="bignum">09</span><span class="eyebrow">Logo</span><h2>The mark, <em>and how to protect it</em>.</h2></div>
+    <p class="lead rv">The "Anne &amp; Sean, like family" wordmark is the primary identity. Give it room, keep contrast high, and leave it alone. Dark mark on light grounds; reversed mark on blue or over photography.</p>
+    <div class="logo-demos mt rv">
+      <div><div class="ld light"><img src="mfi-logo-dark.png" alt="Logo on light"></div><p class="cap">Primary &middot; dark mark on light grounds</p></div>
+      <div><div class="ld dark"><img src="mfi-logo-light.png" alt="Logo reversed on blue"></div><p class="cap">Reversed &middot; white mark on blue or photography</p></div>
+    </div>
+    <p class="mt rv"><strong>Clear space &amp; size.</strong> Keep clear space on all sides equal to the cap-height of the wordmark; no text, rules or photo edges enter it. Minimum 140px wide on screen. Pair with the Equal Housing Opportunity mark where required.</p>
+    <div class="donts rv">
+      <div class="dont-x"><b>&times;</b> Don't stretch or condense</div>
+      <div class="dont-x"><b>&times;</b> Don't recolour the mark</div>
+      <div class="dont-x"><b>&times;</b> Don't put dark on dark</div>
+      <div class="dont-x"><b>&times;</b> Don't rotate or angle it</div>
+      <div class="dont-x"><b>&times;</b> No shadows or glows</div>
+    </div>
+  </div>
+</section>
+
+<!-- 10 SOCIAL -->
+<section id="s10" class="band-mist">
+  <div class="wrap">
+    <div class="head rv"><span class="bignum">10</span><span class="eyebrow">Social</span><h2>Where most clients <em>meet you</em>.</h2></div>
+    <p class="lead rv">More people will find Anne and Sean on Instagram than on the website, so the feed carries the same two halves: real local work and homes, held together by a disciplined, upscale frame.</p>
+    <div class="cols2 mt rv">
+      <div class="card"><h4>Profile &amp; grid</h4><ul><li>Reversed logo on blue, centred, legible at 32px</li><li>Alternate listings with team and coastal shots</li><li>Never three of the same kind in a row</li><li>Keep blue to one accent element per frame</li></ul></div>
+      <div class="card"><h4>Captions &amp; handle</h4><ul><li>Brand voice, first person plural, warm</li><li>Name the neighbourhood; tag the location</li><li>Get client permission before posting a home</li><li>Use one handle consistently across platforms</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- 11 COMPONENTS -->
+<section id="s11">
+  <div class="wrap">
+    <div class="head rv"><span class="bignum">11</span><span class="eyebrow">Components</span><h2>Buttons, forms, <em>and the small stuff</em>.</h2></div>
+    <p class="lead rv">Interface pieces stay simple and consistent. Primary actions are coastal blue; secondary actions are a blue outline. One corner radius, generous padding, clear focus.</p>
+    <div class="cols2 mt rv">
+      <div class="card"><h4>Buttons</h4><div class="btnrow"><a class="b b-primary" href="#s11">Start your search</a><a class="b b-ghost" href="#s11">Get in touch</a></div><div class="btnrow"><a class="b b-dark" href="#s11">Home valuation</a></div><p class="comp-note">Blue for the main action, outline for secondary, ink for a quiet alternate. Never more than one primary in a view.</p></div>
+      <div class="card"><h4>Forms</h4><div class="field"><label>Full name</label><input type="text" value="Jane Buyer" readonly></div><div class="field"><label>Email</label><input type="text" value="jane@email.com" readonly></div><p class="comp-note">Uppercase labels in grey, one hairline border, blue focus. Keep contact forms short.</p></div>
+    </div>
+    <div class="card mt rv"><h4>Navigation &amp; motion</h4><ul><li>Nav in Open Sans, calm and uncrowded; logo left, a single primary CTA right.</li><li>Links shift to Deep Blue on hover. No colour changes that fight the accent.</li><li>Motion is subtle: gentle fades and short eases. Nothing bouncy.</li></ul></div>
+  </div>
+</section>
+
+<!-- 12 NAMING -->
+<section id="s12" class="band-mist">
+  <div class="wrap">
+    <div class="head rv"><span class="bignum">12</span><span class="eyebrow">Naming</span><h2>Name, numbers, <em>and metadata</em>.</h2></div>
+    <p class="lead rv">One spelling of everything, everywhere, from the footer to the Google listing. Consistency here is what makes a two-person team look like an established brand.</p>
+    <div class="kv mt rv">
+      <div><b>Team name</b><span>The Quinn Group</span></div>
+      <div><b>Principals</b><span>Anne Warner &amp; Sean Quinn, Realtors&reg;</span></div>
+      <div><b>Brokerage</b><span>Water Pointe Realty</span></div>
+      <div><b>Office</b><span>3727 SE Ocean Blvd, Suite 100, Stuart, FL 34996</span></div>
+      <div><b>Anne</b><span>anne@likefamilyfl.com &middot; (772) 713-7223</span></div>
+      <div><b>Sean</b><span>sean@likefamilyfl.com &middot; (772) 486-6883</span></div>
+      <div><b>Website</b><span>myfloridainsider.com</span></div>
+      <div><b>Title pattern</b><span>Page Name | The Quinn Group &middot; Treasure Coast Real Estate</span></div>
+      <div><b>Tagline</b><span>Bringing professionalism back to real estate, one transaction at a time.</span></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-flex">
+    <div><div class="tl">The Quinn Group</div><div style="margin-top:4px;">Brand Guidelines</div></div>
+    <div>Prepared by Makarios Marketing</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+  if(reduce) return;
+  document.body.classList.add('reveal-on');
+  var els=[].slice.call(document.querySelectorAll('.rv'));
+  var vh=window.innerHeight||800;
+  var io=('IntersectionObserver' in window)?new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{rootMargin:'0px 0px -8% 0px',threshold:0.06}):null;
+  els.forEach(function(el){
+    if(el.getBoundingClientRect().top < vh*0.92){ el.classList.add('in'); return; }
+    if(io){ io.observe(el); } else { el.classList.add('in'); }
+  });
+})();
+</script>
+
+</html>
