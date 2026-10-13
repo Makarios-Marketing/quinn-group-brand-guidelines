@@ -8,10 +8,13 @@
 @media print{
   *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;}
   .reveal-on .rv,.rv{opacity:1!important;transform:none!important;}
-  .hero{min-height:95vh!important;} .hero .bg{animation:none!important;transform:scale(1)!important;}
-  .scroll-cue{display:none!important;} .spread{min-height:72vh!important;}
+  .hero{min-height:100vh!important;} .hero .bg{animation:none!important;transform:scale(1)!important;}
+  .scroll-cue{display:none!important;}
+  section{padding:56px 0 48px!important;break-before:page;break-inside:auto;}
+  .spread{min-height:100vh!important;padding:0!important;}
+  .head{margin-bottom:26px!important;} .bignum{top:-26px!important;}
   .card,.member,.type-card,.duo,.sw,.ld,.device{break-inside:avoid;}
-  section{break-inside:auto;}
+  footer{break-before:avoid;padding:30px 0!important;}
 }
 @page{size:A4;margin:0;}
 html,body{margin:0;}
